@@ -14,11 +14,9 @@ for i in range(r):
     for j in range(c):
         print(mat2[i][j], end=" ")
     print()
-addition_result = [[0, 0, 0],
-                   [0, 0, 0],
-                   [0, 0, 0]]
+print("enter the initial result matrix:")
+addition_result = [[int(input()) for X in range(c)]for y in range(r)]
 for i in range(len(mat1)):
-
     for j in range(len(mat2[0])):
         addition_result[i][j] = mat1[i][j] + mat2[i][j]
 
