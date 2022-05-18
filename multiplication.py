@@ -17,14 +17,16 @@ for i in range(r2):
         print(mat2[i][j], end=" ")
     print()
 
-multiplication_result = [[int(0) for X in range(c)]for y in range(r)]
-if(c==r2) and (r==c2):
-    for i in range(len(mat1)):  
-     for j in range(len(mat2[0])): 
-      for k in range(len(mat2)):  
-       multiplication_result[i][j]=mat1[i][k]*mat2[k][j] 
-    print('Result after multiplication:')
-    for item in multiplication_result:
-     print(item)
+multiplication_result = [[int(0) for X in range(c2)]for y in range(r)]
+if(c==r2):
+    for i in range(len(mat1)):
+        for j in range(len(mat2[0])): 
+            for k in range(len(multiplication_result)):  
+                multiplication_result[i][j]=mat1[i][k]*mat2[k][j] 
+                print('Result after multiplication:')
+                for item in multiplication_result:
+                    print(item)     
 else:
-    print('not possible')
+    print('multiplication not possible')
+
+
