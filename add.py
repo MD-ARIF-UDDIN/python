@@ -4,10 +4,12 @@ print("enter the values of first matrix:")
 mat1 = [[int(input()) for X in range(c)]for y in range(r)]
 print("enter the values of second matrix:")
 mat2 = [[int(input()) for X in range(c)]for y in range(r)]
+print('matrix1 after taking input:')
 for i in range(r):
     for j in range(c):
         print(mat1[i][j], end=" ")
     print()
+print('matrix2 after taking input:')
 for i in range(r):
     for j in range(c):
         print(mat2[i][j], end=" ")
